@@ -20,11 +20,12 @@ export function RestaurantCard({  name, image, isOpen }: RestaurantCardProps) {
             src={image}
             alt={name}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
           />
           {!isOpen && (
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <Badge variant="destructive" className="text-lg font-semibold px-3 py-1">
+              <Badge variant="destructive" className="text-base sm:text-lg font-semibold px-3 py-1">
                 Closed
               </Badge>
             </div>
@@ -32,19 +33,19 @@ export function RestaurantCard({  name, image, isOpen }: RestaurantCardProps) {
         </div>
       </CardContent>
       <CardFooter className="p-4 flex flex-col items-start gap-2">
-        <h2 className="text-lg font-semibold line-clamp-1">{name}</h2>
+        <h2 className="text-base sm:text-lg font-semibold line-clamp-1">{name}</h2>
         <div className="flex items-center justify-between w-full">
-          <Badge variant={isOpen ? "default" : "secondary"} className="text-xs">
+          <Badge variant={isOpen ? "default" : "secondary"} className="text-xs sm:text-sm">
             {isOpen ? "Open" : "Closed"}
           </Badge>
           {isOpen ? (
             <Link href={`/${name}`} passHref>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" className="text-xs sm:text-sm">
                 View Menu
               </Button>
             </Link>
           ) : (
-            <Button variant="outline" size="sm" disabled>
+            <Button variant="outline" size="sm" disabled className="text-xs sm:text-sm">
               View Menu
             </Button>
           )}

@@ -82,7 +82,6 @@ export default function HomePage({
   if (error) {
     return <ErrorState />
   }
-console.log(`workhour--->${restaurants[0].todayWorkingHours?.closeTime}`);
   return (
     <div className="min-h-screen flex flex-col">
       <Header 
@@ -93,7 +92,6 @@ console.log(`workhour--->${restaurants[0].todayWorkingHours?.closeTime}`);
       <main className="flex-grow container mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {restaurants.map((restaurant) => (
-      
             <RestaurantCard 
               key={restaurant.id} 
               id={restaurant.id} 
@@ -112,7 +110,7 @@ console.log(`workhour--->${restaurants[0].todayWorkingHours?.closeTime}`);
 
         <div className="mt-8">
           <Pagination>
-            <PaginationContent>
+            <PaginationContent className="flex-wrap justify-center">
               <PaginationItem>
                 <PaginationPrevious
                   href="#"

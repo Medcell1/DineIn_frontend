@@ -1,4 +1,5 @@
 import { fetchAllRestaurants } from "@/action/restaurant";
+import { ErrorState } from "@/components/error-state";
 import HomePage from "@/components/HomePage";
 export const dynamic = "force-dynamic";
 export default async function Home({
@@ -30,6 +31,6 @@ export default async function Home({
     );
   } catch (error) {
     console.error("Error fetching restaurants:", error);
-    return <div>Error loading restaurants. Please try again later.</div>;
+    return <ErrorState/>;
   }
 }

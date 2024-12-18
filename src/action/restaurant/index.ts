@@ -15,6 +15,7 @@ export const fetchAllRestaurants = async (
     pagination: PaginationType;
   }> => {
     try {
+      
       const response = await axiosInstance.get(`${API_BASE_URL}`, {
         params: {
           search: params.search,
