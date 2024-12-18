@@ -1,6 +1,5 @@
 
-```
-#DineIn Food E-Commerce App 🍔🛒
+# DineIn Food E-Commerce App 🍔🛒
 
 A **Food E-Commerce App** built with [Next.js](https://nextjs.org/), offering dynamic menu management, user authentication, category-based browsing, and a responsive UI for seamless user experience.
 
@@ -8,37 +7,24 @@ A **Food E-Commerce App** built with [Next.js](https://nextjs.org/), offering dy
 
 ## Features 🚀
 
-- **Dynamic Menu Management**: 
-  Manage menus dynamically based on user roles and preferences.
-- **Category Management**: 
-  Organize menu items into categories for better user navigation.
-- **User Authentication**: 
-  Secure login/logout and session management with NextAuth.
-- **Responsive Design**: 
-  Fully responsive UI optimized for mobile and desktop.
-- **Error Handling**: 
-  Friendly error messages for smooth user experience.
+- **Dynamic Menu Management**: Manage menus dynamically based on user roles and preferences.
+- **Category Management**: Organize menu items into categories for better user navigation.
+- **User Authentication**: Secure login/logout and session management with NextAuth.
+- **Responsive Design**: Fully responsive UI optimized for mobile and desktop.
+- **Error Handling**: Friendly error messages for smooth user experience.
 
 ---
 
 ## Tech Stack 🛠️
 
-- **Frontend**: 
-  [Next.js](https://nextjs.org/), React, TypeScript
-- **Backend**: 
-  Node.js, Express.js (hosted on [Railway](https://railway.app/))
-- **Database**: 
-  MOngoDb
-- **State Management**: 
-  Context API 
-- **Styling**: 
-  Tailwind CSS / Styled-Components / (
-- **Authentication**: 
-  Session-based authentication with NextAuth
+- **Frontend**: [Next.js](https://nextjs.org/), React, TypeScript
+- **Backend**: Node.js, Express.js (hosted on [Railway](https://railway.app/))
+- **Database**: MongoDB
+- **State Management**: Context API
+- **Styling**: Tailwind CSS / Styled-Components
+- **Authentication**: Session-based authentication with NextAuth
 
 ---
-
-
 
 ## Getting Started 🏗️
 
@@ -47,7 +33,7 @@ A **Food E-Commerce App** built with [Next.js](https://nextjs.org/), offering dy
 ```bash
 git clone https://github.com/Medcell1/food-ecommerce-fe.git
 cd food-ecommerce-fe
-```
+
 
 ### Install Dependencies
 
