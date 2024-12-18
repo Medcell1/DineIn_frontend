@@ -27,7 +27,7 @@ export function Header({ searchTerm, onSearchChange, isSearchDisabled }: HeaderP
             />
             <div className="flex items-center space-x-4">
               <Button asChild variant="outline" className="w-full sm:w-auto">
-                <Link href="/vendor">Register/Login as a Vendor</Link>
+                <Link href="/admin/login">Register/Login as a Vendor</Link>
               </Button>
               <ThemeSwitcher />
             </div>
