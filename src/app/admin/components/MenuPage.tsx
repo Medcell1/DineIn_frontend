@@ -96,7 +96,6 @@ export default function MenuDashboardClient({
         const term = e.target.value;
         setSearchTerm(term);
 
-        // Call the debounced search function
         debouncedSearch(term);
     };
 

@@ -80,15 +80,15 @@ export const createMenuItem = async (
 // Update a menu item
 export const updateMenuItem = async (
   id: string,
-  menuData: { name?: string; price?: number; description?: string; measure?: string; image?: File }
+  menuData: { name?: string; price?: number;  measure?: string; image?: File; category?: string; }
 ) => {
   try {
     const formData = new FormData();
     if (menuData.name) formData.append('name', menuData.name);
     if (menuData.price !== undefined) formData.append('price', menuData.price.toString());
-    if (menuData.description) formData.append('description', menuData.description);
     if (menuData.measure) formData.append('measure', menuData.measure);
     if (menuData.image) formData.append('file', menuData.image);
+    if (menuData.category) formData.append('category', menuData.category);
 
     const response = await axiosInstance.put(`${API_BASE_URL}/${id}`, formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
