@@ -8,10 +8,9 @@ import Link from 'next/link'
 interface HeaderProps {
   searchTerm: string
   onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-  isSearchDisabled: boolean
 }
 
-export function Header({ searchTerm, onSearchChange, isSearchDisabled }: HeaderProps) {
+export function Header({ searchTerm, onSearchChange, }: HeaderProps) {
   return (
     <header className="sticky top-0 z-10 bg-background border-b border-border">
       <div className="container mx-auto py-4 px-4 sm:px-6 lg:px-8">
