@@ -23,8 +23,7 @@ export function Header({ searchTerm, onSearchChange, isSearchDisabled }: HeaderP
               value={searchTerm}
               onChange={onSearchChange}
               className="w-full sm:w-64"
-              disabled={isSearchDisabled}
-            />
+                          />
             <div className="flex items-center space-x-4">
               <Button asChild variant="outline" className="w-full sm:w-auto">
                 <Link href="/admin/login">Register/Login as a Vendor</Link>
